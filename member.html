@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flicker Gyms Membership</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+        .content {
+            flex: 1; /* Allow the content area to expand and push the footer to the bottom */
+        }
+        .footer {
+            background-color: #212529; /* Dark background color */
+            color: white;
+            padding: 1rem 0;
+        }
+        .card-header {
+            background-color: #007bff; /* Blue background for card headers */
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Flicker Gyms</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/member.html">Memberships</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Gym Membership Plans</h1>
+        <p class="fs-5 text-muted">Choose the perfect membership plan that fits your fitness goals. We offer a variety of options to help you stay fit and healthy.</p>
+      </div>
+  
+    <main>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Basic</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$20<small class="text-muted fw-light">/month</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Access to gym equipment</li>
+                <li>Free fitness assessment</li>
+                <li>Group fitness classes</li>
+                <li>Monthly check-ins</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Standard</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$35<small class="text-muted fw-light">/month</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Access to all gym equipment</li>
+                <li>Free personal training session</li>
+                <li>Unlimited group classes</li>
+                <li>Discounts on workshops</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Join Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-white bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Premium</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$50<small class="text-muted fw-light">/month</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Access to all facilities</li>
+                <li>Unlimited personal training</li>
+                <li>Free workshops and seminars</li>
+                <li>Priority booking for classes</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-white">Home</a></li>
+          <li class="nav-item"><a href="/member.html" class="nav-link px-2 text-white">Memberships</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Classes</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
+        </ul>
+        <p class="text-center mb-0">&copy; 2024 Flicker Gyms</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
