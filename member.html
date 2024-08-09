@@ -11,19 +11,69 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+            min-height: 100vh;
+            background-color: #121212;
+            color: #e0e0e0;
         }
-        .content {
-            flex: 1; /* Allow the content area to expand and push the footer to the bottom */
+        .content { 
+            flex: 1;
         }
         .footer {
-            background-color: #212529; /* Dark background color */
+            background-color: #212529;
             color: white;
             padding: 1rem 0;
         }
+        .pricing-header {
+            padding: 3rem 1rem;
+            color: #000000;
+            background-image: url('/Images/paperwork.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+        .pricing-header h1, .pricing-header p {
+          font-family: 'Patrick Hand', cursive; /* Apply the chosen font */
+        }
+        .pricing-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text readability */
+            z-index: -1;
+            border-radius: 0.5rem;
+        }
         .card-header {
-            background-color: #007bff; /* Blue background for card headers */
+            background-color: #343a40;
             color: white;
+        }
+        .card-body {
+            background-color: #212529;
+            color: #e0e0e0;
+        }
+        .card-title {
+            color: #ffffff;
+        }
+        .btn-outline-primary {
+            color: #ffffff;
+            border-color: #007bff;
+            background-color: transparent;
+        }
+        .btn-outline-primary:hover {
+            color: #ffffff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004080;
         }
     </style>
   </head>
@@ -37,13 +87,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    <a class="nav-link" href="/index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="/about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/member.html">Memberships</a>
+                  <a class="nav-link active" aria-current="page" href="/member.html">Memberships</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/equipment.html">Equipment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="/classes.html">Classes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -54,12 +116,13 @@
     </div>
 </nav>
 
-      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <div class="pricing-header text-center">
         <h1 class="display-4 fw-normal">Gym Membership Plans</h1>
-        <p class="fs-5 text-muted">Choose the perfect membership plan that fits your fitness goals. We offer a variety of options to help you stay fit and healthy.</p>
+        <p class="fs-5">Choose the perfect membership plan that fits your fitness goals.</p>
+        <p class="fs-5">We offer a variety of options to help you stay fit and healthy.</p>
       </div>
   
-    <main>
+    <main class="content">
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
@@ -67,7 +130,7 @@
               <h4 class="my-0 fw-normal">Basic</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$20<small class="text-muted fw-light">/month</small></h1>
+              <h1 class="card-title pricing-card-title">₹1700<small class="text-muted fw-light">/month</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>Access to gym equipment</li>
                 <li>Free fitness assessment</li>
@@ -84,7 +147,7 @@
               <h4 class="my-0 fw-normal">Standard</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$35<small class="text-muted fw-light">/month</small></h1>
+              <h1 class="card-title pricing-card-title">₹3000<small class="text-muted fw-light">/month</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>Access to all gym equipment</li>
                 <li>Free personal training session</li>
@@ -101,7 +164,7 @@
               <h4 class="my-0 fw-normal">Premium</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">$50<small class="text-muted fw-light">/month</small></h1>
+              <h1 class="card-title pricing-card-title">₹4000<small class="text-muted fw-light">/month</small></h1>
               <ul class="list-unstyled mt-3 mb-4">
                 <li>Access to all facilities</li>
                 <li>Unlimited personal training</li>
@@ -116,15 +179,16 @@
     </main>
 
     <footer class="footer">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-white">Home</a></li>
-          <li class="nav-item"><a href="/member.html" class="nav-link px-2 text-white">Memberships</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Classes</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
-        </ul>
-        <p class="text-center mb-0">&copy; 2024 Flicker Gyms</p>
-    </footer>
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-white">Home</a></li>
+        <li class="nav-item"><a href="/member.html" class="nav-link px-2 text-white">Memberships</a></li>
+        <li class="nav-item"><a href="/equipment.html" class="nav-link px-2 text-white">Equipment</a></li>
+        <li class="nav-item"><a href="/classes.html" class="nav-link px-2 text-white">Classes</a></li>
+        <li class="nav-item"><a href="/faq.html" class="nav-link px-2 text-white">FAQs</a></li>
+        <li class="nav-item"><a href="/contact.html" class="nav-link px-2 text-white">Contact Us</a></li>
+      </ul>
+      <p class="text-center mb-0">&copy; 2024 Flicker Gyms</p>
+  </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
