@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classes - Flicker Gyms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        .navbar {
+            margin-bottom: 1rem;
+        }
+        .classes-header {
+            padding: 3rem 1rem;
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .class-card {
+            background-color: #212529;
+            color: #e0e0e0;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        .class-card img {
+            width: 100%;
+            height: auto;
+        }
+        .class-card-body {
+            padding: 1rem;
+        }
+        .class-card-title {
+            margin-bottom: 0.5rem;
+        }
+        .class-card-text {
+            margin-bottom: 0.5rem;
+        }
+        .footer {
+            background-color: #212529;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Flicker Gyms</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/member.html">Memberships</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/equipment.html">Equipment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/classes.html">Classes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="classes-header">
+        <h1 class="display-4">Our Fitness Classes</h1>
+        <p class="fs-5">Explore our range of classes designed to help you achieve your fitness goals. Whether you're into high-intensity workouts or relaxing yoga, we have something for everyone.</p>
+    </div>
+  
+    <main class="container my-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="class-card">
+                    <img src="/Images/Spinning.jpg" alt="Spinning Class">
+                    <div class="class-card-body">
+                        <h5 class="class-card-title">Spinning</h5>
+                        <p class="class-card-text">Join our high-energy spinning classes and experience a great cardio workout. Our state-of-the-art bikes and motivating instructors ensure an exhilarating ride.</p>
+                        <p><strong>Schedule:</strong> Mon, Wed, Fri - 6:00 PM to 7:00 PM</p>
+                        <p><strong>Instructor:</strong> Sarah Johnson</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="class-card">
+                    <img src="/Images/Yoga.jpg" alt="Yoga Class">
+                    <div class="class-card-body">
+                        <h5 class="class-card-title">Yoga</h5>
+                        <p class="class-card-text">Our yoga classes focus on flexibility, strength, and relaxation. Suitable for all levels, our experienced instructors will guide you through various poses and techniques.</p>
+                        <p><strong>Schedule:</strong> Tue, Thu - 7:00 AM to 8:00 AM</p>
+                        <p><strong>Instructor:</strong> Emily Davis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="class-card">
+                    <img src="/Images/Zumba.jpg" alt="Zumba Class">
+                    <div class="class-card-body">
+                        <h5 class="class-card-title">Zumba</h5>
+                        <p class="class-card-text">Get ready to dance and sweat with our Zumba classes! This high-energy class combines fun dance moves with great music for an enjoyable workout.</p>
+                        <p><strong>Schedule:</strong> Mon, Wed - 5:00 PM to 6:00 PM</p>
+                        <p><strong>Instructor:</strong> Michael Lee</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="class-card">
+                    <img src="/Images/Pilates.jpg" alt="Pilates Class">
+                    <div class="class-card-body">
+                        <h5 class="class-card-title">Pilates</h5>
+                        <p class="class-card-text">Our Pilates classes focus on core strength, flexibility, and overall body conditioning. Ideal for improving posture and strength with low-impact exercises.</p>
+                        <p><strong>Schedule:</strong> Tue, Thu - 6:00 PM to 7:00 PM</p>
+                        <p><strong>Instructor:</strong> Laura Smith</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more class cards as needed -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-white">Home</a></li>
+          <li class="nav-item"><a href="/member.html" class="nav-link px-2 text-white">Memberships</a></li>
+          <li class="nav-item"><a href="/equipment.html" class="nav-link px-2 text-white">Equipment</a></li>
+          <li class="nav-item"><a href="/classes.html" class="nav-link px-2 text-white">Classes</a></li>
+          <li class="nav-item"><a href="/faq.html" class="nav-link px-2 text-white">FAQs</a></li>
+          <li class="nav-item"><a href="/contact.html" class="nav-link px-2 text-white">Contact Us</a></li>
+        </ul>
+        <p class="text-center mb-0">&copy; 2024 Flicker Gyms</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
